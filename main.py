@@ -20,4 +20,6 @@ class garage:
         self.cars.append(car)
 
 ford = garage()
-ford.add_car('fiesta')
+car = Car('fiesta', 'jaguar')
+ford.add_car(car)
+print(len(ford))
