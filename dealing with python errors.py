@@ -26,3 +26,7 @@ try:
     ford.add_car('fiesta')
 except TypeError:
      print('your car was not a car')
+except ValueError:
+    print('something weird happend')
+finally:
+    print(f'the garage now has {len(ford)} cars')
