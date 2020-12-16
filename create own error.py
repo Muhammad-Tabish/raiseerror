@@ -6,5 +6,4 @@ class RuntimeError(TypeError):
         super().__init__(f'Error code {code} : {message }')
         self.code = code
 
-err = RuntimeError('An Error happened', 500)
-print(err.__doc__)
+raise  RuntimeError('OUCH An error happend', 500)
