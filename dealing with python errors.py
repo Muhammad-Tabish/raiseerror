@@ -16,7 +16,7 @@ class garage:
 
     def add_car(self, car):
         if not isinstance(car, Car):
-            raise TypeError(f'tried to add a {car.__class__.__name__} to the garage ')
+            raise ValueError(f'tried to add a {car.__class__.__name__} to the garage ')
         self.cars.append(car)
 
 ford = garage ()
